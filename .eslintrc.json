@@ -3,6 +3,7 @@
   "plugins": ["prettier"],
   "rules": {
     "no-unused-vars": "warn",
-    "func-names": "off"
+    "func-names": "off",
+    "no-console": "off"
   }
 }
