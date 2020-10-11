@@ -5,6 +5,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 const mongoose = require('mongoose');
 const methodOverride = require('method-override');
+const session = require('express-session');
+const flash = require('connect-flash');
 
 // mongoose connection
 mongoose
@@ -34,6 +36,15 @@ app.set('view engine', 'ejs');
 
 // app.use(logger('dev'));
 app.use(methodOverride('_method'));
+app.use(
+  session({
+    secret: 'keyboard cat',
+    resave: false,
+    saveUninitialized: true,
+    cookie: { maxAge: 60000 },
+  })
+);
+app.use(flash());
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());

@@ -4,6 +4,7 @@
   "rules": {
     "no-unused-vars": "warn",
     "func-names": "off",
-    "no-console": "off"
+    "no-console": "off",
+    "object-shorthand": "off"
   }
 }
