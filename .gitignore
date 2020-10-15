@@ -116,3 +116,4 @@ dist
 .pnp.*
 
 public/images/
+seed.js

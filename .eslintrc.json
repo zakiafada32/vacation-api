@@ -7,7 +7,6 @@
     "no-console": "off",
     "object-shorthand": "off",
     "no-underscore-dangle": "off",
-    "no-await-in-loop": "off",
-    "allowForLoopAfterthoughts": true
+    "no-await-in-loop": "off"
   }
 }
