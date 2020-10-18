@@ -1,12 +1,15 @@
 {
   "extends": ["airbnb", "prettier"],
-  "plugins": ["prettier"],
+  "plugins": ["prettier", "chai-friendly"],
+  "env": { "mocha": true },
   "rules": {
     "no-unused-vars": "warn",
     "func-names": "off",
     "no-console": "off",
     "object-shorthand": "off",
     "no-underscore-dangle": "off",
-    "no-await-in-loop": "off"
+    "no-await-in-loop": "off",
+    "no-unused-expressions": 0,
+    "chai-friendly/no-unused-expressions": 2
   }
 }
