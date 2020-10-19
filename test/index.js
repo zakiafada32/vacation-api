@@ -125,7 +125,6 @@ describe('API ENDPOINT TESTING', () => {
           'price',
           'duration'
         );
-        console.log(res.body.booking);
         done();
       });
   });
