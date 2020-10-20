@@ -8,6 +8,7 @@ const mongoose = require('mongoose');
 const methodOverride = require('method-override');
 const session = require('express-session');
 const flash = require('connect-flash');
+const cors = require('cors');
 
 // mongoose connection
 mongoose
@@ -35,6 +36,7 @@ const adminRouter = require('./routes/admin');
 const apiRouter = require('./routes/api');
 
 const app = express();
+app.use(cors());
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
